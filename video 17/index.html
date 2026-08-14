@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /*element selector*/
+        /*So this is the default div */
+        div {
+            background-color: rgb(120, 157, 162);
+        }
+        /*Class selector*/
+        /*while this is the one whih acts only on partiular class given*/
+        .red{
+            background-color: red;
+        }
+        /*ID selector*/
+        /*This is the one which acts on the particular id given*/
+        #blue{
+            background-color: blue;
+        }
+        /*Child selector*/
+        /*This is the one which acts on the child of the parent element*/
+        /*direct child*/
+        div > div{
+            background-color: rgb(168, 66, 202);
+        }
+        /*OR*/
+        /*This wont act as there is a descendant selector below which acts|*/
+        div > p{
+            background-color: rgb(191, 138, 184);
+        }
+        /*Descendant selector*/
+        /*This is the one which acts on the child of the parent element*/
+        /*That is  it just means the p tag inside div thats it the heirarchy may be more than one level*/
+        div p{
+            background-color: rgb(227, 56, 155);
+        }
+        /*Universal selector*/
+        /*This is the one which acts on all the elements in the page*/
+        *{
+            background-color: rgb(99, 207, 115);
+        }
+        /*It also can be padding, margin and other properties as well*/
+        *{
+            padding: 10px;
+            margin: 10px;
+        }
+        /* Pseudo Selector */
+        /*This is the one which acts on a specific state of an element*/
+        /*Here we are using the anchor tag and its visited state*/
+        a:visited{
+            color: rgb(165, 4, 4);
+        }
+        /*Not visited state*/
+        a:link{
+            color: rgb(4, 4, 165);
+        }
+        /*Active state that is when the link is clicked and is active or simply that short moment when the link is clicked*/
+        a:active{
+            color: rgb(14, 27, 41);
+        }
+        /*There is another one which apparently Harry didn't discuss somehow but I found it pretty cool and that is hover state that is when the mouse hovers over the link*/
+        /*That when the link is running over the browser and the mouse is on top of the link(not clicked)*/
+        a:hover{
+            color: rgb(214, 160, 59);
+        }
+        /*Now its paragraph*/
+        /*First child targetsthefirst element*/
+        p:first-child{
+            background-color: rgb(224, 162, 46);
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a dev
+    </div>
+    <div>
+        I am another div
+    </div>
+    <div id="blue">
+        I am a blue div
+    </div>
+    <div>
+        <div>
+            I am a child div
+        </div>
+    </div>
+    <div>
+        <p>
+            I am a child p
+        </p>
+    </div>
+    <div>
+        <div>
+            <p>
+                I am a child p inside a child div
+            </p>
+        </div>
+    </div>
+    <!--Lets keep few websites to check how pseudo selector works-->
+    <a href="https://www.google.com" target="_blank">Google</a> 
+    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+</body>
+</html>
