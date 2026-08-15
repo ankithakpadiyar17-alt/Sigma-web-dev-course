@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        /*This commented content is of Codewith harry, I am making a new one for my understanding
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color: rgb(115, 171, 220);
+        }
+        .box1{
+            color:rgb(6, 11, 96);
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height:200px;
+            box-sizing:border-box;
+            ####Now line 22 is specifying height, while line 23 is saying that while I say 200px make sure its border+padding. Basically line 23kinda change sthe definiton of heioght ###
+        }
+        .box2{
+            color:brown;
+            padding: 10px;
+            margin: 30px;
+            border:2px solid black;
+            height:200px;
+            box-sizing:border-box;
+        }
+            ####MARGIN COLLAPSE says that is two Margins merge then the Margibn will the max of both#####
+        /*So now Margin comes first inside which Border inside which comes Padding*/
+        /*So this is what my Understanding is MARGIN is like How much Px is the content away from the ends of the screen, the BORDER is just like any other border you can see it in code below, then PADDING is just like border but whatever you are styling comes with text in Padding like suppose you are making bg blue and padding will be 5 px then bg of text and 5px away on all 4 sides of text both will be blue */
+
+        .box{
+            margin: 10px;
+            /*What is solid??? It is the type of border it can be solid, dashed, dotted, double, groove, ridge, inset, outset,none (or just leave it empty so that browser take default as nothing that is no border)*/
+
+            border: 2px solid black;
+            padding: 10px;
+            background-color: aqua;
+        }
+        /*This class is just for symmetry so can ignore*/
+        .sym{
+            margin: 10px;
+        }
+        /*Now, for border I don't think so accept solidany other borders are usually used but just for fun lets make some more classes and try all of them and ofcourse solid is the og one usually used*/
+        .dashed{
+            border: 2px dashed black;
+        }
+        .dotted{
+            border: 2px dotted black;
+        }
+        .double{
+            border: 2px double black;
+        }
+        /*Zoom in to see difference for groove, ridge, inset and outset because for the first glance all looks same*/
+        .groove{
+            border: 2px groove black;
+        }
+        .ridge{
+            border: 2px ridge black;
+        }
+        .inset{
+            border: 2px inset black;
+        }
+        .outset{
+            border: 2px outset black;
+        }
+        .none1{
+            border: 2px none black;
+        }
+        .none2{
+            border: 2px black;
+        }
+    </style>
+</head>
+<body>
+    <!--This commented content is of Codewith harry, I am making a new one for my understanding
+    ###when giving class if we want to give more than one class just give space in between###
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+    -->
+    <div class="box">
+        I am a box</div><br>
+    <!--Now, for border I don't think so accept solidany other borders are usually used but just for fun lets make some more classes and try all of them and ofcourse solid is the og one usually used-->
+    <!--sym class will be added to all below classes just for symmetry so can ignore-->
+    <div class="dashed sym">
+        This is a dashed border
+    </div><br>
+    <div class="dotted sym">
+        This is a dotted border
+    </div><br>
+    <div class="double sym">
+        This is a double border
+    </div><br>
+    <!--Zoom in to see difference for groove, ridge, inset and outset because for the first glance all looks same-->
+    <div class="groove sym">
+        This is a groove border
+    </div><br>
+    <div class="ridge sym">
+        This is a ridge border
+    </div><br>
+    <div class="inset sym">
+        This is a inset border
+    </div><br>
+    <div class="outset sym">
+        This is a outset border
+    </div><br>
+    <div class="none1 sym">
+        This is a none border or no border
+    </div><br>
+    <div class="none2 sym">
+        This is a none border or no border
+    </div><br>
+</body>
+</html>
