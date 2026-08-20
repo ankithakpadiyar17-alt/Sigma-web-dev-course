@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:aqua;
+        } /*This h1 will just actas default here*/
+        .cred{
+            color: red;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cpurple{
+           color: purple; 
+        }
+        /*  REMEMBER IT IS IN ORDER
+        (1)Important
+        If something is marked important than its done its like the president gave the order nothing above that
+        Ex:
+           p{
+               color: red !important; 
+           }
+        (2)Origin ie default browser CSS
+        (3)Specificity
+        Inline style > ID selector > Class or Attribute > Element Selector > Universal selector
+            (a)What is inline selector???? in HTML in H! tag if <h1 style="color: blue"> this will be inline selector so css first checks this.
+            (b)ID selector 
+            HTML:<h1 id="title"> Hello <h1>
+            CSS:#title{
+                    color: red;    
+                }
+            (c)Class and attributes are same and yk what are they so
+            (d)Element selectors
+             These are basivally this div, p, h1, etc..,
+            (e)Universal selector
+            *{
+                 ........
+            }
+        (4)Effect of position(We will check element selector)
+        Above you can see that the color of font will be purple but why??????
+        Here comes cascading algorithm
+        Now what it says is when more than one function is given to an element follow the recent most, also remember recent most in css not html(Not the class but the command given ie class means .cred , .cpurple and functions or command is color:)
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style =" color: blue" class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+</html>
+
+
+<!--NOTES
+
+To calculate the specificity while in larger scale give universal selector-0, Element selector(Pseudo selector-1, class selector-10, id selector-100, inline styles-1000, importance-10000
+
+if
+h1.yellow{
+    color: yellow;
+}
+here h1 points and yellow points get added
+Ex:
+a.harryclass.rohanclass[href]:hover{
+        color: bluevoilet;
+}
+The specificity of this selector is 1+10+10+10+10=41
+-->
+<!--I noticed not a note <link> and <style> holds same value-->
