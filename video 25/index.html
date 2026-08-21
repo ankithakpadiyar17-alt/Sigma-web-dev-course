@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            
+            background-color: yellowgreen;
+            border: 2px solid black;
+            /*We see that the bg and border or any other similar things won't work for the numbers so do this step below*/
+            list-style-position: inside;
+            list-style-image: url("img.jpg");
+            /*What is this??? It just sets list-style or the element in margin basically 1, 2, 3,.... or just dots if it were as the image*/
+            list-style-type: "🥀"
+            /*You can simply set any emoji too
+            But here cause the specificity of image is more so this emoji part won't work*/
+             
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Address</li>
+        </ul>
+    </nav>
+</body>
+</html>
