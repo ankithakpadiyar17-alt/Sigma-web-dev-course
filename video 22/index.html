@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+        }
+        .container{
+            box-sizing: border-box;
+            border:2px solid black;
+            /* width: 1098px;  ####Full screen####*/
+            width: 80vw;
+            height: 10vh;
+            margin: auto; /*Works only for block elememt*/
+            background-color:aqua;
+            font-size: 16px;
+        }
+        .box{
+            box-sizing: border-box;
+            border:2px solid black;
+            /* width: 1098px;  ####Full screen####*/
+            width: 24px auto;
+            height: 80vh;
+            margin: auto; /*Not for inline element */
+            min-height:80vh;
+            background-color:aqua;
+        }
+        .container p{
+            font-size:1.5em;
+            width:50%;
+        }
+
+        .mycont{
+            background-color: red;
+            color: rgb(8, 8, 2);
+            font-size: 22px;
+            width: 80vw;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+        /* 
+        px->pixel
+        vw->viewport width(According to device)
+        vh->viewport hieght( "             ")
+        em->relative font size
+                  ie if the font size is20px and em is 2 then 2*20=40px will be the size
+        rem->root em
+                  ie html defauylt has font size as 16 px you can change by html{} too so ya mukltiply that
+        %->Percentage of parent element
+
+
+
+        1px=1/96th of an inch 
+
+
+
+        vmin-> height for desktop width for mobhile phone
+        vmax->vice versa
+        min-height/width-> default if there is no muich cointent I want the height or width to be this much
+
+        for more units can check mdn css unit docs
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Values_and_units
+        */
+    </style>
+</head>
+<body>
+    <span class="box">
+        This is a box
+    </span>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus laboriosam? Molestiae accusamus necessitatibus, tenetur, ducimus nostrum dolores quo vel repellat cupiditate officia quod impedit, architecto tempore minus praesentium sint ullam voluptates expedita sapiente nihil provident officiis! Ut, facere, nihil veritatis dicta maiores accusantium, qui blanditiis hic vel veniam molestias dolores recusandae doloremque sunt quis magnam.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum rerum harum minus ex incidunt eligendi asperiores dolores! Quod praesentium totam qui quidem excepturi quas ullam minima ut nobis quibusdam quam recusandae officiis assumenda ab magni dolor, molestias repellat laboriosam, eos in deserunt eligendi. Molestiae possimus beatae veniam qui ratione earum nulla delectus, veritatis dolor odio obcaecati temporibus, accusamus consequuntur nesciunt blanditiis itaque est mollitia velit numquam voluptate culpa ipsa deserunt quod. Quas, autem consequatur natus quo corrupti officia culpa ipsam quia iste perspiciatis unde cumque deserunt ex. Iste voluptates nesciunt, adipisci, cupiditate atque repellendus at neque dignissimos totam iure fugiat eveniet facilis maxime tempore, mollitia vel itaque deleniti. Aspernatur assumenda explicabo porro excepturi? Perspiciatis a ratione iure, praesentium temporibus unde, velit placeat harum molestiae quia odio deserunt recusandae ab itaque veritatis quos. Nesciunt cupiditate sit praesentium aliquid vel suscipit hic adipisci, placeat fuga nisi deleniti animi explicabo at magnam veritatis minima facilis perspiciatis maxime obcaecati dignissimos culpa eligendi error dolorum. Neque nam sed sunt fugit expedita quis tenetur recusandae architecto repellendus quibusdam voluptates magnam, ullam iusto error minima porro quae veritatis cupiditate consequuntur odit fuga asperiores libero debitis similique! Quia ab nostrum debitis ipsam veniam aliquid tempora nam perferendis voluptatem aperiam voluptatum repellat cupiditate, optio officiis voluptatibus adipisci at sint a laborum quas aut? Quos enim dolore facilis quam cum animi consequatur harum ab unde omnis mollitia distinctio quo, exercitationem ipsa magnam, molestias odio officiis fugiat. Recusandae minima fugit tempore id quo sed earum adipisci facilis enim labore consectetur optio natus, perferendis soluta qui animi reprehenderit eligendi mollitia? Ad possimus eaque dolore perferendis minima, odit maxime aperiam repudiandae ipsum culpa. Sed illum quasi reiciendis praesentium. Provident quibusdam sapiente corporis velit voluptatibus soluta vitae quisquam modi quae iusto libero, possimus ut error sunt maxime, minima perferendis corrupti. Eaque asperiores ex assumenda iure cum libero laborum adipisci, consequuntur magni aspernatur, facilis maiores. Aperiam accusamus optio debitis rerum molestias iure saepe animi veritatis vero asperiores sequi aut, quas doloremque molestiae explicabo. Sed cumque quibusdam vel earum et. Placeat laudantium explicabo aperiam dignissimos aut illum cumque! Accusantium quasi magni consectetur assumenda hic aliquam ipsam! Repellat dolore optio numquam eveniet ratione praesentium perferendis magnam officia? Nihil provident corrupti voluptatibus sint eius tempora at assumenda, impedit mollitia est nulla debitis quo hic praesentium tempore enim. Libero et nam magnam illo at. Pariatur aspernatur, ratione ullam fuga similique praesentium veniam repellat rem deleniti ab aliquid molestias ipsa adipisci ipsam repellendus fugit molestiae perspiciatis iusto porro nihil doloremque! Excepturi vitae minus aperiam asperiores adipisci officiis saepe ex dicta! Facere blanditiis vel perferendis, consectetur fugiat consequuntur perspiciatis voluptates minus, quia quidem enim quibusdam, doloribus earum. Aperiam earum iusto minima reprehenderit corrupti, sapiente libero molestias doloribus repellendus iure quos dolorem animi consequuntur nemo quasi officiis vel veniam id harum est laborum voluptatibus? Corrupti molestiae magnam deleniti autem beatae accusamus consequatur obcaecati quia repellendus tempore cumque placeat, aut dicta dolore quasi praesentium eum numquam aperiam quidem neque cum architecto. Delectus qui vitae recusandae, quis reprehenderit corporis minus provident explicabo repellat hic, modi cupiditate. Animi laudantium fugiat et in omnis fuga architecto eveniet commodi sit ullam maiores excepturi, natus dolor laboriosam repellendus doloribus voluptas quas. Optio ipsa voluptatem dolorum, vero consequatur maiores obcaecati eveniet dolore odio enim!
+    </div>
+    <div class="mycont">I am another container</div>
+</body>
+</html>
