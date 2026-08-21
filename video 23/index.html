@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+                border: 2px solid blue;
+                display: inline-block;
+                width:344px;
+                padding:45px; 
+                margin:34px;
+                /*For inline element's margin, padding these things won't work above so we put
+                
+                display: inline-block
+                
+                */
+        }
+        .box1{
+            /* display: none;
+             Removes the box      NO EXTRA SPACE LEFT AFTER REMOVAL */
+            visibility: hidden; /*KEEPS THE EXTRA SPACE*/
+        }
+        /*For more again check MDN docs for display properties*/
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        Also a nice box
+    </div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+</html>
