@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 100vw;
+            height: 30vh;
+            border: 2px solid black;
+            /*Before the state of code was this so we can see that the code is overflowing
+            So, to avoid that put below line or there are many other types too can check those out*/
+            overflow:scroll;
+            /*
+            A very good practise would be to use auto so that it will put scrollbar if needed.
+            
+            Overflow can also be controlled as x and y like ovweeflow-x and similarly also can be controlled seperately can try this one too.
+            
+            This is overflow. There is another one text-overflow which says how should text look when overflowed.Again can try if needed which again has same types so nevermind*/
+            white-space: nowrap;
+            /*Can remove and check what whitrespace nowrap does ie says d not bring text down
+            there is many more types like elipsis too check those if needed*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque maxime fugiat reiciendis quibusdam repellat, voluptatem laboriosam quas velit aspernatur nulla fugit quidem quaerat id voluptas praesentium esse quae nostrum sed recusandae. Earum repellendus, explicabo unde neque reprehenderit doloribus inventore cum iusto recusandae praesentium tenetur quia quam, dicta dignissimos vel itaque quidem laboriosam animi provident iste! Aliquam.
+    </div>
+</body>
+</html>
