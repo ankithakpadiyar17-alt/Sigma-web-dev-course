@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 15px 5px 3px rgba(18, 102, 148, 0.395) ;
+                      /*h-offset 
+                            v-offset
+                                 blur 
+                                     spread
+                                          color */
+            /*There is one more thing I noticed that was "inset". Nothing if you put this keyword the shadow generated will be inwards*/
+            text-shadow: 2px 2px 4px rgb(37, 39, 39);
+                        /*h-offset 
+                             v-offset
+                                 blur color*/      
+        }
+        .box1{
+            outline: 2px solid black;
+            outline-offset: 13px;
+            border-radius: 23px;
+            /* Remember outline is not same as border and this offset is just to adjust the outline and also this border radius is just to curve the edges*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div. class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio voluptatibus culpa vel, quam eligendi ipsa voluptatem? Animi soluta nulla vitae aut labore?</div>
+</body>
+</html>
