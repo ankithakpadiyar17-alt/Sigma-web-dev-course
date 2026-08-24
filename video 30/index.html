@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: blue;
+            --seccolor: rgb(129, 129, 235);
+            --defpad: 24px;
+            --defop: 0.3;
+            /*So, basically html is not a coding language but you can use variables to hold colors, string, numbers so many things like this.*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 20px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: aqua;
+            background-color: var(--color, blue);/*says if var not found put blue*/
+            
+        }
+        .container{
+            background-color:var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate veritatis autem, ut asperiores, quam excepturi modi recusandae, iure veniam quia odio ea! Reprehenderit quis cum provident sequi, iure nihil enim! Praesentium laborum voluptas hic perferendis! Cumque vero esse, iusto praesentium itaque rerum perspiciatis quaerat cum.
+    </div>
+    
+</body>
+</html>
